@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+struct student {
+	int ID;
+	char name[10];
+	char lastname[10];
+};
+int main()
+{
+	int n;
+	cin >> n;
+	student student[10];
+	for (int i = 0; i < n; i++)
+	{
+		cin >> student[i].ID >> student[i].name >> student[i].lastname;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << student[i].ID << "." << student[i].name << " " << student[i].lastname << endl;
+	}
+}
